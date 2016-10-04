@@ -1,4 +1,6 @@
 import numpy
+import matplotlib
+matplotlib.use("agg")
 import matplotlib.pyplot
 
 def analyze(filename):
