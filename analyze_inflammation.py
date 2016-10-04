@@ -1,6 +1,9 @@
 import numpy
+
+# configure matplotlib with a non-interactive backend so that it can run on the workers
 import matplotlib
 matplotlib.use("agg")
+
 import matplotlib.pyplot
 
 def analyze(filename):
