@@ -2,7 +2,7 @@ import numpy
 
 # configure matplotlib with a non-interactive backend so that it can run on the workers
 import matplotlib
-matplotlib.use("agg")
+#matplotlib.use("agg")
 
 import matplotlib.pyplot
 
@@ -37,6 +37,7 @@ def analyze(filename):
     fig.tight_layout()
     matplotlib.pyplot.savefig(filename.replace("csv", "png"))
     matplotlib.pyplot.close(fig)
+    return filename.replace("csv", "png")
     
 def detect_problems(filename):
 
